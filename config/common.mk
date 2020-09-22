@@ -1,7 +1,7 @@
 #Syberia OS
 #
 # Inherit art options
-include vendor/syberia/config/art.mk
+#include vendor/syberia/config/art.mk
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -88,10 +88,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/syberia/prebuilt/common/etc/privapp-permissions-syberia.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-syberia.xml \
     vendor/syberia/prebuilt/common/etc/syberia-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/syberia-hiddenapi-package-whitelist.xml \
-    vendor/syberia/config/permissions/privapp-permissions-custom.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-custom.xml \
-    vendor/syberia/config/permissions/privapp-permissions-googleapps-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-googleapps-product.xml \
-    vendor/syberia/config/permissions/privapp-permissions-googleapps-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-googleapps-system.xml \
-    vendor/syberia/prebuilt/common/etc/privapp-permissions-turbo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-turbo.xml
+    vendor/syberia/config/permissions/privapp-permissions-custom.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-custom.xml
 
 # Fonts
 PRODUCT_COPY_FILES += \
