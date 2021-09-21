@@ -109,6 +109,16 @@ PRODUCT_PACKAGES += \
     HighRounded \
     ExtremeRounded
 
+# Volume Panel styles
+PRODUCT_PACKAGES += \
+	CompactPanel \
+	OreoPanel \
+	TiledPanel \
+	MiuiCompactPanel \
+	OosPanel \
+	P404Panel \
+	ShapeShiftPanel
+
 # Themes
 PRODUCT_PACKAGES += \
     SyberiaThemesStub \
