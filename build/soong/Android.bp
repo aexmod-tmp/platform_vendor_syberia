@@ -1,4 +1,4 @@
-// AospExtended soong configs
+// Syberia soong configs
 
 bootstrap_go_package {
     name: "soong-aosp-generator",
@@ -17,7 +17,7 @@ bootstrap_go_package {
     pluginFor: ["soong_build"],
 }
 
-syberia_generator {
+aosp_generator {
     name: "generated_kernel_includes",
 
     // The headers make command

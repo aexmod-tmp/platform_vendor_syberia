@@ -101,7 +101,7 @@ PRODUCT_PACKAGES += \
     PrimaryColorSyberiaOverlay
 
 # Rounded Styles
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     StockRounded \
     NoneRounded \
     SlightRounded \
@@ -131,7 +131,7 @@ PRODUCT_PACKAGES += \
     StitchImage
 
 # Switch styles
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     SwitchAOSP \
     SwitchAndroid12 \
     SwitchContained \
