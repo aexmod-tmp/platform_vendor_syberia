@@ -73,7 +73,7 @@ PRODUCT_PACKAGES += \
     OmniStyle
 
 # Accents
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     AccentColorYellowOverlay \
     AccentColorVioletOverlay \
     AccentColorTealOverlay \
@@ -111,8 +111,9 @@ PRODUCT_PACKAGES += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    SyberiaThemesStub \
-    FontGoogleSansOverlay
+    SyberiaThemesStub
+
+#    FontGoogleSansOverlay
 
 # Config
 PRODUCT_PACKAGES += \
@@ -141,7 +142,7 @@ PRODUCT_PACKAGES += \
     SwitchOOS
 
 # Navbar
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     GesturalNavigationOverlayLong \
     GesturalNavigationOverlayMedium \
     GesturalNavigationOverlayHidden
