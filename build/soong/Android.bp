@@ -86,7 +86,7 @@ camera_needs_client_info_lib {
 soong_config_module_type {
     name: "camera_needs_client_info_lib_oplus",
     module_type: "cc_defaults",
-    config_namespace: "lineageGlobalVars",
+    config_namespace: "aospGlobalVars",
     bool_variables: ["camera_needs_client_info_lib_oplus"],
     properties: [
         "cppflags",
@@ -107,7 +107,7 @@ camera_needs_client_info_lib_oplus {
 soong_config_module_type {
     name: "camera_override_format_from_reserved",
     module_type: "cc_defaults",
-    config_namespace: "lineageGlobalVars",
+    config_namespace: "aospGlobalVars",
     bool_variables: ["camera_override_format_from_reserved"],
     properties: ["cppflags"],
 }
@@ -117,6 +117,26 @@ camera_override_format_from_reserved {
     soong_config_variables: {
         camera_override_format_from_reserved: {
             cppflags: ["-DTARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "aapt_version_code",
+    module_type: "java_defaults",
+    config_namespace: "aospGlobalVars",
+    value_variables: ["aapt_version_code"],
+    properties: ["aaptflags"],
+}
+
+aapt_version_code {
+    name: "aapt_version_code_defaults",
+    soong_config_variables: {
+        aapt_version_code: {
+            aaptflags: [
+                "--version-code",
+                "%s",
+            ],
         },
     },
 }
@@ -382,7 +402,7 @@ uses_nothing_camera {
 soong_config_module_type {
     name: "uses_oppo_camera",
     module_type: "cc_defaults",
-    config_namespace: "lineageGlobalVars",
+    config_namespace: "aospGlobalVars",
     bool_variables: ["uses_oppo_camera"],
     properties: ["cppflags"],
 }
