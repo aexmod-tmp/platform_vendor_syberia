@@ -21,7 +21,6 @@ from xml.dom.minidom import parseString
 
 def main(argv):
     importlib.reload(sys)
-    sys.setdefaultencoding('utf8')
     original_file = 'vendor/syberia/prebuilt/etc/apns-conf.xml'
 
     if len(argv) == 3:
